@@ -31,6 +31,7 @@
     "panto-transformer-write": ">=0.3.4"
   },
   "devDependencies": {
+    "panto-transformer-write": "~0.3.4",
     "panto": "0.1.0-alpha.1"
   }
 }
