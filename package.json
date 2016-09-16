@@ -1,0 +1,33 @@
+{
+  "name": "release-panto",
+  "version": "0.1.0",
+  "description": "Release panto",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pantojs/release-panto.git"
+  },
+  "keywords": [
+    "panto",
+    "release",
+    "publish"
+  ],
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "author": "yanni4night@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pantojs/release-panto/issues"
+  },
+  "homepage": "https://github.com/pantojs/release-panto",
+  "devDependencies": {
+    "panto": "0.1.0-alpha.1"
+  }
+}
