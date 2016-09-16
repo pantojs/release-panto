@@ -1,9 +1,7 @@
 language: node_js
 before_install:
   - npm install -g eslint
+  - npm install -g mocha
 sudo: false
 node_js:
   - stable
-after_script:
-  - npm install -g istanbul
-  - npm run coveralls
