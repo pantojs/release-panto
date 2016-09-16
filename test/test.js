@@ -23,11 +23,16 @@ describe('release-panto', () => {
                 src: 'fixtures'
             });
             release(panto, (files, output) => {
-                assert.deepEqual(files, ['a.css', 'b.css']);
+                assert.deepEqual(files, ['dist-a.css', 'dist-b.css']);
                 assert.deepEqual(output, __dirname + '/output');
                 done();
             });
-            panto.$('*.css').tag('CSS');
+            panto.loadTransformer('write');
+            panto.$('*.css').tag('CSS').write({
+                destname: file => {
+                    return `dist-${file.filename}`;
+                }
+            });
             panto.build();
         });
     });
